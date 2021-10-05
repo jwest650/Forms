@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e3edfd;
+  font-family: "Open Sans", sans-serif;
+}
+
+body > div {
+  position: relative;
+  border: none;
+  margin: 15px auto;
+  height: 170px;
+  width: 600px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+}
+
+body > div input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding-top: 50px;
+  width: 100%;
+  color: #6e737b;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.radio {
+  height: 170px;
+}
+.radio input {
+  width: unset;
+  margin-top: 20px;
+}
+
+.text {
+  background-color: unset;
+  height: unset;
+  width: 600px;
+  color: #6e737b;
+  padding: unset;
+}
+
+.submit {
+  padding: unset;
+  height: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: unset;
+}
+
+.green {
+  background-color: #34a853;
+  height: 10px;
+  border-radius: 5px;
+  width: 150px;
+  display: inline-block;
+}
+
+.submit button {
+  color: white;
+  border-radius: 5px;
+  background-color: #147fee;
+  padding: 10px 20px;
+  border: none;
+}
+
+.last {
+  color: #6e737b;
+  padding: unset;
+  background-color: unset;
+  height: unset;
+}
+
+.link {
+  padding: unset;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: unset;
+  background-color: unset;
+  padding: unset;
+  text-align: center;
+}
+.link p {
+  font-size: 0.8em;
+}
+.link a {
+  font-size: 0.7em;
+  color: #6e737b;
+  padding-left: 5px;
+}
+
+.google {
+  height: unset;
+  background-color: unset;
+  padding: unset;
+  text-align: center;
+  color: #6e737b;
+}
+
+.capture {
+  height: unset;
+  background-color: unset;
+  padding: unset;
+  text-align: center;
+}
+main {
+  position: relative;
+  width: 300px;
+}
+
+main .focused {
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  background-color: #147fee;
+  bottom: 0;
+  transition: 0.4s;
+  left: 50%;
+}
+input:focus ~ .focused {
+  transition: 0.4s;
+  width: 100%;
+  left: 0;
+}
+
+.asterik {
+  color: red;
+}
+
+body > div:nth-child(1) {
+  border-top: 10px solid blue;
+}
+body > div:nth-child(1) p {
+  font-size: 0.8em;
+  padding: 10px 0;
+}
